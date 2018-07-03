@@ -1,20 +1,21 @@
 import React from "react";
 
-import { Container, Row, Col } from "reactstrap";
-
 export default class StatusWidget extends React.Component {
   render() {
     return (
-      <div style={{ display: "-webkit-box" }}>
-        <div className="col-4 widget ">
-          <h3>10</h3>Hackathons
+      <div>
+        <div className="col-12 widget ">
+          <h3>10</h3>
+          <div>Hackathons</div>
         </div>
-        <div className="col-4 widget ">
-          <h3>10</h3>Teams
+        <div className="col-12 widget ">
+          <h3>10</h3>
+          <div>Teams</div>
         </div>
-        <div className="col-4 widget ">
-          <h3>10</h3>Participants
-        </div>{" "}
+        <div className="col-12 widget ">
+          <h3>10</h3>
+          <div>Participants</div>
+        </div>
       </div>
     );
   }

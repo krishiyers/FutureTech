@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {
     Collapse,
     Navbar,
@@ -7,11 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem, Button } from 'reactstrap';
+    NavLink } from 'reactstrap';
 
 export default class Toolbar extends React.Component {
     

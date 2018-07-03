@@ -1,17 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Card, Table, Row, Col } from "reactstrap";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default class TopParticipantsTable extends React.Component {
   render() {
     return (
-      <Table>
+      <Table className="widget">
         <thead>
           <tr>
             <th colspan="4">TOP PARTICIPANTS</th>
           </tr>
           <tr>
-            <th>-</th>
+            <th style={{ color: "yellow"}}>-</th>
             <th>Name</th>
             <th>Score</th>
             <th>Badge</th>
@@ -19,7 +18,7 @@ export default class TopParticipantsTable extends React.Component {
         </thead>
         <tbody>
           <tr>
-            <th scope="row">UP</th>
+            <th scope="row"> <FontAwesomeIcon style={{ color: "green"}} icon="arrow-up" /> </th>
             <td>Balaji</td>
             <td>1000</td>
             <td>Gold ICON</td>
@@ -31,13 +30,13 @@ export default class TopParticipantsTable extends React.Component {
             <td>SILVER</td>
           </tr>
           <tr>
-            <th scope="row">DOWN</th>
+            <th scope="row"><FontAwesomeIcon style={{ color: "red"}} icon="arrow-down" /></th>
             <td>Mahesh</td>
             <td>899</td>
             <td>BRONZE</td>
           </tr>
           <tr>
-            <th scope="row">DOWN</th>
+            <th scope="row"><FontAwesomeIcon style={{ color: "red"}} icon="arrow-down" /></th>
             <td>Krish</td>
             <td>850</td>
             <td>No Badge</td>

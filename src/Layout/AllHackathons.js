@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Row, Col } from "reactstrap";
+import { Button, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class AllHackathons extends React.Component {
@@ -13,11 +13,11 @@ export default class AllHackathons extends React.Component {
           </Col>
           <Col className="col-9 allHackContainer">
             <h5>Hackathon Name</h5>
-            <div className="small">
+            <div>
               hackathon
               descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
             </div>
-            <div className="small">Teams # Participants #</div>
+            <div >Teams # Participants #</div>
           </Col>
           <Col className="col-2 allHackContainer" style={{ "text-align": "right" }} >
             <Button color="secondary">Join Us</Button>

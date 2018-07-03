@@ -2,67 +2,68 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #ececec!important;
+  font-size: 13px !important;
+  color: #56595d!important;
 }
-.navHeader{
+.navHeader {
   height: 8em;
 }
-.no-padding{
-  padding:0px!important;
+.no-padding {
+  padding: 0px !important;
 }
-.pageContainer{
-  margin-left: 15em!important;
-  margin-right: 15em!important;
-  border: 2px solid #D4D4D4;
+.pageContainer {
+  margin-left: 15em !important;
+  margin-right: 15em !important;
+  border: 2px solid #d4d4d4;
   padding: 1em;
+  background: #ececec !important;
 }
 
 :root {
-  --bright-grey: #56595D;
-  --san-marino: #576A9F;
-  --light-grey: #D4D4D4;
-  --snow: #FAFAFA;
-  --hawkes-blue: #D3DEF6;
+  --bright-grey: #56595d;
+  --san-marino: #576a9f;
+  --light-grey: #d4d4d4;
+  --snow: #fafafa;
+  --hawkes-blue: #d3def6;
 }
-.navbar-shadow{
+.navbar-shadow {
   box-shadow: 0px 1px 10px 1px #d4d4d4;
 }
 
-.row-content{
-margin-top: 1em;
+.row-content {
+  margin-top: 1em;
 }
 
-.small{
-  font-size:80%;
+.carousel {
+  height: 20em;
 }
 
-.carousel{
-height: 25em;
-}
-
-.allHackbar{
+.allHackbar {
   margin-bottom: 1em;
-  background: #FAFAFA;
-padding-left: 1em;
-padding-right: 1em;
+  background: #fafafa;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.allHackContainer{
+.allHackContainer {
   padding: 1em;
   line-height: 1.5em;
-  padding-left: 2em!important;
-
+  padding-left: 2em !important;
 }
 
-.widget{
-  margin-bottom: .5em;
-  margin-right: .5em;
-  background: #FAFAFA;
-  padding: .8em;
+.widget {
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+  background: #fafafa !important;
+  padding: 0.8em;
   box-shadow: 0px 1px 10px 1px #d4d4d4;
 }
-.iconstyle{
+.iconstyle {
   padding-top: 1em;
-  margin-right:5px;
-  margin-left:10px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #dee2e6;
 }
