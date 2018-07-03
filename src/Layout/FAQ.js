@@ -1,11 +1,11 @@
 import React from "react";
 
-import HackthonList from "./HackthonList";
+import FAQList from "./FAQList";
 import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from "classnames";
 
 
-export default class AllHackathons extends React.Component {
+export default class FAQ extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,8 +28,8 @@ export default class AllHackathons extends React.Component {
     
     let rows = [];
 
-    for (let i = 0; i < 3; i++) {
-      rows.push(<HackthonList
+    for (let i = 0; i < 4; i++) {
+      rows.push(<FAQList
         name="Reactathon"
         desc="Reactathon description"
         teamCount="20"
@@ -52,7 +52,7 @@ export default class AllHackathons extends React.Component {
                 this.toggle("1");
               }}
             >
-              Active
+              Answered
             </NavLink>
           </NavItem>
 
@@ -63,7 +63,7 @@ export default class AllHackathons extends React.Component {
                 this.toggle("2");
               }}
             >
-              Completed
+              Answered
             </NavLink>
           </NavItem>
 
@@ -74,7 +74,7 @@ export default class AllHackathons extends React.Component {
                 this.toggle("3");
               }}
             >
-              Up Coming
+              Ask
             </NavLink>
           </NavItem>
         </Nav>
@@ -91,10 +91,10 @@ export default class AllHackathons extends React.Component {
             /> */}
           </TabPane>
           <TabPane tabId="2">
-            <HackthonList />
+          {this.forloop()}
           </TabPane>
           <TabPane tabId="3">
-            <HackthonList />
+      
           </TabPane>
         </TabContent>
       </div>

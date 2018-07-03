@@ -14,7 +14,7 @@ export default class HackthonList extends React.Component {
         <Col className="col-1 allHackContainer no-padding">
           <img src="./assets/download.png" />
         </Col>
-        <Col className="col-7 allHackContainer">
+        <Col className="col-9 allHackContainer">
           <h5>{this.props.name}</h5>
           <div>
            {this.props.desc}

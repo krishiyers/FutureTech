@@ -3,6 +3,8 @@ import Toolbar from "./Toolbar";
 import CarouselPage from "./CarouselPage";
 import TopParticipantsTable from "./TopParticipantsTable";
 import AllHackathons from "./AllHackathons";
+import FAQ from "./FAQ";
+
 import StatusWidget from "./StatusWidget";
 import { Row, Col } from "reactstrap";
 
@@ -29,8 +31,12 @@ export default class Layout extends React.Component {
             </Col>
           </Row>
           <Row className="row-content">
-            <Col className="col-10">
+            <Col className="col-9">
               <AllHackathons /> 
+            </Col>
+
+            <Col className="col-3">
+              <FAQ /> 
             </Col>
           </Row>
         </div>
