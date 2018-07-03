@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import RegisterModal from './RegisterModal';
 
 export default class AllHackathons extends React.Component {
   render() {
@@ -20,7 +21,7 @@ export default class AllHackathons extends React.Component {
             <div >Teams # Participants #</div>
           </Col>
           <Col className="col-2 allHackContainer" style={{ "text-align": "right" }} >
-            <Button color="secondary">Join Us</Button>
+           <RegisterModal buttonLabel ="Join Us"></RegisterModal>
             <div className="iconstyle">
               <FontAwesomeIcon icon="heart" />
               <span style={{"margin-left":"5px","margin-right":"10px"}}>1321</span>
