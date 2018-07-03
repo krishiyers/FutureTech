@@ -4,7 +4,7 @@ import CarouselPage from "./CarouselPage";
 import TopParticipantsTable from "./TopParticipantsTable";
 import AllHackathons from "./AllHackathons";
 import StatusWidget from "./StatusWidget";
-import {  Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 export default class Layout extends React.Component {
   render() {
@@ -29,12 +29,8 @@ export default class Layout extends React.Component {
             </Col>
           </Row>
           <Row className="row-content">
-            <Col className="col-12">
-              <AllHackathons />
-              <AllHackathons />
-              <AllHackathons />
-              <AllHackathons />
-              <AllHackathons />
+            <Col className="col-10">
+              <AllHackathons /> 
             </Col>
           </Row>
         </div>

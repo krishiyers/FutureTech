@@ -1,35 +1,82 @@
 import React from "react";
-import { Button, Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import RegisterModal from './RegisterModal';
+
+import HackthonList from "./HackthonList";
+import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
+import classnames from "classnames";
+
 
 export default class AllHackathons extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      activeTab: "1"
+    };
+  }
+
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+    }
+  }
   render() {
     return (
-      <div className="navbar-shadow allHackbar">
-        <Row>
-          <Col className="col-1 no-padding">
-            {" "}
-            <img src="./assets/hack3.jpg" />
-          </Col>
-          <Col className="col-9 allHackContainer">
-            <h5>Hackathon Name</h5>
-            <div>
-              hackathon
-              descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
-            </div>
-            <div >Teams # Participants #</div>
-          </Col>
-          <Col className="col-2 allHackContainer" style={{ "text-align": "right" }} >
-           <RegisterModal buttonLabel ="Join Us"></RegisterModal>
-            <div className="iconstyle">
-              <FontAwesomeIcon icon="heart" />
-              <span style={{"margin-left":"5px","margin-right":"10px"}}>1321</span>
-              <FontAwesomeIcon icon="user-plus" />
-              <span  style={{"margin-left":"5px"}}> 121</span>
-            </div>
-          </Col>
-        </Row>
+      <div>
+        <Nav tabs>
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === "1" })}
+              onClick={() => {
+                this.toggle("1");
+              }}
+            >
+              Active
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === "2" })}
+              onClick={() => {
+                this.toggle("2");
+              }}
+            >
+              Completed
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === "3" })}
+              onClick={() => {
+                this.toggle("3");
+              }}
+            >
+              Up Coming
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <TabContent activeTab={this.state.activeTab}>
+          <TabPane tabId="1">
+           
+            <HackthonList
+              name="Reactathon"
+              desc="Reactathon description"
+              teamCount="20"
+              participantsCount="1000"
+              likes="1200"
+            />
+          </TabPane>
+          <TabPane tabId="2">
+            <HackthonList />
+          </TabPane>
+          <TabPane tabId="3">
+            <HackthonList />
+          </TabPane>
+        </TabContent>
       </div>
     );
   }
