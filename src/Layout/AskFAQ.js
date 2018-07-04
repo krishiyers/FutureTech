@@ -13,7 +13,7 @@ class AskFAQ extends React.Component {
   }
 
   increment = () => {
-    this.props.incrementCounter;
+    incrementCounter();
   };
 
   decrement = () => {
