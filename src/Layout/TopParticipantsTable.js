@@ -43,8 +43,8 @@ export default class TopParticipantsTable extends React.Component {
           </tr>
           <tr>
             <th scope="row"><FontAwesomeIcon style={{ color: "red"}} icon="arrow-down" /></th>
-            <td>Krish</td>
-            <td>850</td>
+            <td>Keerthana</td>
+            <td>80</td>
             <td></td>
           </tr>
         </tbody>

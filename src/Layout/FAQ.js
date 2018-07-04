@@ -15,6 +15,7 @@ export default class FAQ extends React.Component {
       activeTab: "1"
     };
     this.forloop =  this.forloop.bind(this);
+    this.forloop2 =  this.forloop2.bind(this);
   }
 
   toggle(tab) {
@@ -52,19 +53,29 @@ export default class FAQ extends React.Component {
       participantsCount="50"
       likes="1200"
     />);
-
-    // for (let i = 0; i < 4; i++) {
-    //   rows.push(<FAQList
-    //     name="Who all can participate in hackathons"
-    //     desc="All full time employees can participate"
-    //     teamCount="20"
-    //     participantsCount={i}
-    //     likes="1200"
-    //   />);
-
-    // }
     return rows;
   }
+
+  
+  forloop2(){
+    
+    let rows2 = [];
+
+    rows2.push(<FAQList
+      name="Will the organizer provide food?"
+      desc=""
+
+    />);
+
+    rows2.push(<FAQList
+      name="Rupees or Dollars?"
+      desc=""
+   
+    />);
+
+    return rows2;
+  }
+
 
   render() {
     return (
@@ -92,7 +103,7 @@ export default class FAQ extends React.Component {
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               className={classnames({ active: this.state.activeTab === "3" })}
               onClick={() => {
@@ -100,8 +111,8 @@ export default class FAQ extends React.Component {
               }}
             >
               Ask
-            </NavLink>
-          </NavItem>
+            </NavLink> 
+          </NavItem>*/}
         </Nav>
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
@@ -116,11 +127,9 @@ export default class FAQ extends React.Component {
             /> */}
           </TabPane>
           <TabPane tabId="2">
-          {this.forloop()}
+          {this.forloop2()}
           </TabPane>
-          <TabPane tabId="3">
-        <AskFAQ />
-          </TabPane>
+          
         </TabContent>
       </div>
     );

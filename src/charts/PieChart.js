@@ -19,7 +19,7 @@ export default class PieExample extends React.Component {
 
   render() {
     return (
-      <div className="widget">
+      <div className="widget" >
         <h5>{this.props.name}</h5>
         <Pie data={this.data}  options={{  maintainAspectRatio: false,
             legend:{
