@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RegisterModal from './RegisterModal';
+import {Link} from 'react-router-dom';
+import FAQ from './FAQ';
 
 export default class HackthonList extends React.Component {
     constructor(props) {
@@ -15,7 +17,8 @@ export default class HackthonList extends React.Component {
           <img src="./assets/images.png" />
         </Col>
         <Col className="col-9 allHackContainer">
-          <h5>{this.props.name}</h5>
+        <Link to="/solutions"><h5>{this.props.name}</h5></Link>
+        
           <div>
            {this.props.desc}
           </div>
