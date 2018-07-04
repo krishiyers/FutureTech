@@ -11,8 +11,8 @@ export default class HackthonList extends React.Component {
   render() {
     return (
       <Row className="no-margin">
-        <Col className="col-1 allHackContainer no-padding">
-          <img src="./assets/download.png" />
+        <Col className="col-1 blogImage">
+          <img src="./assets/images.png" />
         </Col>
         <Col className="col-9 allHackContainer">
           <h5>{this.props.name}</h5>
@@ -23,16 +23,16 @@ export default class HackthonList extends React.Component {
         </Col>
         <Col
           className="col-2 allHackContainer"
-          style={{ "text-align": "right" }}
+          style={{ "textAlign": "right" }}
         >
-         <RegisterModal buttonLabel ="Join Us"></RegisterModal>
+         <RegisterModal buttonLabel ="Register"></RegisterModal>
           <div className="iconstyle">
             <FontAwesomeIcon icon="heart" />
-            <span style={{ "margin-left": "5px", "margin-right": "10px" }}>
+            <span style={{ "marginLeft": "5px", "marginRight": "10px" }}>
               {this.props.likes}
             </span>
             <FontAwesomeIcon icon="user" />
-            <span style={{ "margin-left": "5px" }}> 121</span>
+            <span style={{ "marginLeft": "5px" }}> 121</span>
           </div>
         </Col>
       </Row>

@@ -1,12 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: sans-serif; 
   font-size: 13px !important;
   color: #56595d !important;
+  
 }
 .navHeader {
   height: 8em;
+  margin: auto;
+    width: 90%;
 }
 .no-padding {
   padding: 0px !important;
@@ -63,7 +66,7 @@ body {
   background: #fafafa !important;
   padding: 0.8em;
   box-shadow: 0px 1px 10px 1px #d4d4d4;
-  height: 7em;
+  min-height: 7em;
 }
 .iconstyle {
   padding-top: 1em;
@@ -85,4 +88,25 @@ body {
   background-color: transparent !important;
   border: 0px!important;
   border-bottom: 4px solid #007bff!important;
+}
+
+.header{
+  font-size: 28px;
+  padding-left: .5em;
+  font-weight: 600;
+}
+.carouselSize{
+  width: 100%;
+}
+
+.blogImage{
+margin-top: 1em!important;;
+padding-left: 0em!important;
+}
+
+.headerStyle{
+font-size: 29px;
+font-family: 'Exo 2', sans-serif;
+font-weight: 500;
+margin-left: -.5em;
 }

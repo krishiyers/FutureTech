@@ -8,18 +8,18 @@ import {
 } from 'reactstrap';
 
 const items = [
-  // {
-  //   src: 'assets/Capture.JPG',
-  //   altText: 'Slide 1',
-  //   caption: 'Slide 1'
-  // },
+   {
+     src: 'assets/Slide.jpg',
+     altText: 'Slide 1',
+     caption: 'Slide 1'
+   },
   {
-    src: 'assets/2.jpg',
+    src: 'assets/Slide 2.jpg',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    src: 'assets/2.jpg',
+    src: 'assets/Slide 4.jpg',
     altText: 'Slide 3',
     caption: 'Slide 3'
   }
@@ -71,7 +71,7 @@ export default class CarouselPage extends React.Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img className="carouselSize" src={item.src} alt={item.altText} />
           {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );

@@ -28,7 +28,7 @@ export default class AllHackathons extends React.Component {
     
     let rows = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       rows.push(<HackthonList
         name="Reactathon"
         desc="Reactathon description"

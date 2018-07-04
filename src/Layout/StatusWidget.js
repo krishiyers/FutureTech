@@ -5,16 +5,16 @@ export default class StatusWidget extends React.Component {
     return (
       <div>
         <div className="col-12 widget ">
-          <h1>10</h1>
-          <div>Hackathons</div>
+          <h1>8</h1>
+          <div>Active Hackathons</div>
         </div>
         <div className="col-12 widget ">
-          <h1>10</h1>
-          <div>Teams</div>
+          <h1>140</h1>
+          <div>Active Teams</div>
         </div>
         <div className="col-12 widget ">
-          <h1>10</h1>
-          <div>Participants</div>
+          <h1>1039</h1>
+          <div>Active Participants</div>
         </div>
       </div>
     );

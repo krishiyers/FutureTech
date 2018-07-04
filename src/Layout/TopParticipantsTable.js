@@ -7,7 +7,7 @@ export default class TopParticipantsTable extends React.Component {
       <Table className="widget">
         <thead>
           <tr>
-            <th colspan="4">TOP PARTICIPANTS</th>
+            <th colSpan="4">TOP PARTICIPANTS</th>
           </tr>
           <tr>
             <th style={{ color: "yellow"}}>-</th>

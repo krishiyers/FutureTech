@@ -1,4 +1,6 @@
 import React from 'react';
+import CreateModal from './CreateModal';
+import { Button } from "reactstrap";
 import {
     Collapse,
     Navbar,
@@ -26,17 +28,17 @@ export default class Toolbar extends React.Component {
     
     render() {
       return (<div>
-        <Navbar className="navbar-shadow navHeader" color="light" light expand="md">
+        <Navbar className=" navHeader" color="light" light expand="md">
         
-          <NavbarBrand href="/">Hackathon Dashboard</NavbarBrand>
+          <NavbarBrand style={{"display":"-webkit-box"}} href="/"><img style={{"width":"80%"}} src="./assets/logo.png"></img><div className="headerStyle">Hack Zone</div></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Create</NavLink>
+                <NavLink href="#"><CreateModal buttonLabel ="Create"></CreateModal></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">My Activity</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap"><Button color="light">My Activity</Button></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

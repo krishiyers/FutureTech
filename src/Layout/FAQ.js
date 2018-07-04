@@ -1,6 +1,7 @@
 import React from "react";
 
 import FAQList from "./FAQList";
+import AskFAQ from "./AskFAQ";
 import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from "classnames";
 
@@ -63,7 +64,7 @@ export default class FAQ extends React.Component {
                 this.toggle("2");
               }}
             >
-              Answered
+              Unanswered
             </NavLink>
           </NavItem>
 
@@ -94,7 +95,7 @@ export default class FAQ extends React.Component {
           {this.forloop()}
           </TabPane>
           <TabPane tabId="3">
-      
+        <AskFAQ />
           </TabPane>
         </TabContent>
       </div>

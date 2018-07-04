@@ -13,21 +13,33 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Row>
-          <Col>
+          <Col className="navbar-shadow">
             <Toolbar />
           </Col>
         </Row>
         <div className="pageContainer">
+        <div className="row header">Overview<hr /></div>
           <Row className="row-content">
             <Col className="col-2">
               <StatusWidget />
             </Col>
             <Col className="col-7">
-              {/* <CarouselPage /> */}
-              <div className="bg-info carousel">asdasd</div>
+            <CarouselPage /> 
+              {/* <div className="bg-info carousel">asdasd</div> */}
             </Col>
             <Col className="col-3">
               <TopParticipantsTable />
+            </Col>
+          </Row>
+        
+
+          <Row className="row-content">
+            <Col className="col-9 header">
+              Hackathons
+            </Col>
+
+            <Col className="col-3 header">
+              FAQ
             </Col>
           </Row>
           <Row className="row-content">
