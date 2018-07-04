@@ -29,16 +29,40 @@ export default class FAQ extends React.Component {
     
     let rows = [];
 
-    for (let i = 0; i < 4; i++) {
-      rows.push(<FAQList
-        name="Reactathon"
-        desc="Reactathon description"
-        teamCount="20"
-        participantsCount={i}
-        likes="1200"
-      />);
+    rows.push(<FAQList
+      name="Who all can participate in hackathons"
+      desc="All full time employees can participate"
+      teamCount="20"
+      participantsCount="20"
+      likes="1200"
+    />);
 
-    }
+    rows.push(<FAQList
+      name="What is the team size allowed"
+      desc="Different for every hackathons. While creating the hackathon, it can be limited"
+      teamCount="20"
+      participantsCount="30"
+      likes="1200"
+    />);
+
+    rows.push(<FAQList
+      name="When will the winners receive award money ?"
+      desc="Award money will be credited in the next pay cycle"
+      teamCount="20"
+      participantsCount="50"
+      likes="1200"
+    />);
+
+    // for (let i = 0; i < 4; i++) {
+    //   rows.push(<FAQList
+    //     name="Who all can participate in hackathons"
+    //     desc="All full time employees can participate"
+    //     teamCount="20"
+    //     participantsCount={i}
+    //     likes="1200"
+    //   />);
+
+    // }
     return rows;
   }
 
