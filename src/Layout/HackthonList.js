@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RegisterModal from './RegisterModal';
 import {Link} from 'react-router-dom';
 import FAQ from './FAQ';
+import { Line, Circle } from 'rc-progress';
 
 export default class HackthonList extends React.Component {
     constructor(props) {
@@ -17,17 +18,19 @@ export default class HackthonList extends React.Component {
           <img src="./assets/images.png" />
         </Col>
         <Col className="col-9 allHackContainer">
-        <Link to="/solutions"><h5>{this.props.name}</h5></Link>
+        <Link to="/singleHackathonPage"><h5>{this.props.name}</h5></Link>
         
           <div>
            {this.props.desc}
           </div>
           <div>Teams: {this.props.teamCount} | Participants:  {this.props.participantsCount}</div>
+          <div><Circle percent="10" strokeWidth="1" strokeColor="#D3D3D3" /></div>
         </Col>
         <Col
           className="col-2 allHackContainer"
           style={{ "textAlign": "right" }}
         >
+        
          <RegisterModal buttonLabel ="Register"></RegisterModal>
           <div className="iconstyle">
             <FontAwesomeIcon icon="heart" />
