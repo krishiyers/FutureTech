@@ -4,6 +4,11 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import counter from "./Reducers/counter";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 import "./index.css";
 
@@ -16,7 +21,9 @@ const store = createStore(counter, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
+   <Router>
     <App />
+    </Router>
   </Provider>,
   document.getElementById("root")
 );
