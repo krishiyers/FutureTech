@@ -20,7 +20,7 @@ export default class BarExample extends React.Component {
 
   render() {
     return (
-      <div  className="widget" style={{ "height":"300px"}}>
+      <div  className="widget" style={{ "height":"270px"}}>
         <h5>Participants across Orgs</h5>
         <Bar
           data={data}

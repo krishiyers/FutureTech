@@ -38,7 +38,7 @@ export default class Toolbar extends React.Component {
                 <NavLink href="#"><CreateModal buttonLabel ="Create"></CreateModal></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap"><Button color="light">My Activity</Button></NavLink>
+                <NavLink href="/admin"><Button color="light">Admin</Button></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
